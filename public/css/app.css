@@ -1,0 +1,298 @@
+svg {
+    /* border: 1px solid black; */
+    /* width: 80px; */
+    /* margin-left: 15px; */
+}
+
+.col-1 {
+    /* border: 1px solid black; */
+}
+
+.col-3 {
+    /* border: 1px solid black; */
+}
+
+.container-fluid {
+    background-color: #252f38;
+}
+
+.logo-img-v {
+    width: 100%;
+    height: 100%;
+}
+
+#company-name {
+    color: white;
+}
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 800;
+    font-size: larger;
+    font-style: normal;
+}
+
+.auth-parent-v {
+    display: flex;
+}
+
+.auth-v {
+    font-size: xx-large;
+    font-weight: 400;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+.auth-a-v {
+    font-size: xx-large;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.auth-a-v:hover {
+    color: white;
+}
+
+.dropdown-parent-v {
+    /* border: 1px solid red; */
+    /* display: flex; */
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    /* height: fit-content; */
+    /* align-items: center; */
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.dropdown-child-v {
+    height: fit-content;
+    /* border: 1px solid black; */
+}
+
+.dropdown-a-v:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* -----------------Sidepanel css-------------------------*/
+.sidepanel {
+    height: 250px;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: black;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/*-----------------Sidepanel css-------------------------    */
+
+.main-page-img-v {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    border: 1px solid black;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.main-page-img-v::before {
+    content: "";
+    background-image: url("../images/web_banner_compressed.jpg");
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 500px inset;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+
+.h1-rent-v {
+    position: relative;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: normal;
+    /* color: #ffffff;   */
+    /* font-size: 14rem;
+  line-height: 0.9;
+  text-align: center; */
+}
+
+#main-sub-heading-v {
+    position: relative;
+    /* font-size: 60px; */
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: normal;
+}
+
+.div-rent-child-v {
+    width: fit-content;
+    margin: auto;
+}
+
+.div-rent-v {
+    /* margin-left: 350px; */
+    margin-top: 50px;
+    /* width: fit-content; */
+
+}
+
+.popular-cars-h1-v {
+    font-weight: 400;
+}
+
+.popular-cars-div-v {
+    margin: 20px;
+    margin-left: 80px;
+}
+
+/* .main-page-img-v{
+    
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/web_banner_compressed.jpg");
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    opacity: 0.9;
+}
+
+
+
+.div-rent-v{
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+.h1-rent-v{
+    
+    font-size: 60px;
+    font-weight: 600;
+} */
+
+/* -----------------car-cards---------------------------------*/
+
+
+.car-cards-child-v {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    height: 350px;
+    justify-content: space-around;
+}
+
+.car-cards {
+    width: 260px;
+    height: 350px;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 15px -3px rgb(185, 180, 180);
+}
+
+img {
+    border-radius: 1rem 1rem 0px 0px;
+}
+
+.card-car-name-v {
+    margin-top: 40px;
+}
+
+.car-card-v {
+    margin: 0px 5px;
+}
+
+
+/* -----------------car-cards---------------------------------*/
+
+
+
+.getCar{
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+    width: 60%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 35% 0.2% 35% 29.8%;
+    background-color: white;
+    border-radius: 30px;
+    font-family: "IBM Plex Sans";
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.midLine {
+    background: #979797;
+    margin: 10px 0px;
+}
+
+.address:nth-child(4) {
+    background: #10a310;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+}

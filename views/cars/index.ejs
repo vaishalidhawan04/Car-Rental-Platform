@@ -1,0 +1,97 @@
+<%- include("../layouts/boilerplate.ejs") %>
+
+
+    <div class="main-page-img-v">
+        <div>
+
+        </div>
+        <div class="div-rent-v">
+            <div class="div-rent-child-v">
+                <h1 class="h1-rent-v">Rent a car now</h1>
+            </div>
+            <div class="div-rent-child-v">
+                <% if(city) { %>
+                    <h2 id="main-sub-heading-v">Book your drive in <%= city %>
+                    </h2>
+                    <% } else { %>
+                        <h2 id="main-sub-heading-v">Book your drive!</h2>
+                        <% } %>
+            </div>
+        </div>
+
+        <section class="getCar">
+            <div class="address">GLA University Mathura, UP......</div>
+            <div class="midLine"></div>
+            <div class="address">9 Mar '24, 6:00 PM - 12 Mar '24, 2:00 AM</div>
+            <div class="address">GET CAR</div>
+        </section>
+
+    </div>
+
+    <div class="popular-cars-div-v">
+        <h1 class="popular-cars-h1-v">Popular Cars</h1>
+    </div>
+
+    <div class="car-cards-parent-v">
+        <div class="car-cards-child-v">
+            <div class="car-cards">
+                <img src="images/car1-257.jpg" alt="car-image">
+                <div class="car-card-v">
+                    <div class="card-car-name-v">
+                        <h5>Porsche Panamera</h5>
+                        Petrol | 5 seater
+                    </div>
+                    <hr>
+                    <div>
+                        <h6>
+                            &#8377; 500/hr
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <img src="images/car2.jpg" alt="car-image">
+                <div class="car-card-v">
+                    <div class="card-car-name-v">
+                        <h5>Citroen C3</h5>
+                        Petrol | 5 seater
+                    </div>
+                    <hr>
+                    <div>
+                        <h6>
+                            &#8377; 500/hr
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <img src="images/car3.jpg" alt="car-image">
+                <div class="car-card-1-v">
+                    <div class="card-car-name-v">
+                        <h5>Tata Tigor</h5>
+                        Petrol | 5 seater
+                    </div>
+                    <hr>
+                    <div>
+                        <h6>
+                            &#8377; 500/hr
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <img src="images/car4.jpg" alt="car-image">
+                <div class="car-card-1-v">
+                    <div class="card-car-name-v">
+                        <h5>BMW i7 M</h5>
+                        Petrol | 5 seater
+                    </div>
+                    <hr>
+                    <div>
+                        <h6>
+                            &#8377; 500/hr
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin: 0px;
+        }
+        body{
+            background-image: url("https://www.bookingholdings.com/wp-content/uploads/2018/01/rentalcars_background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .container{
+            width:400px;
+            height:auto;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 3px 3px rgb(180, 177, 177);
+            margin:100px auto;
+            padding-top: 20px;
+            background-color: rgb(241, 237, 237);
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            display:block;
+            text-align:left;
+            width: 50%;
+            margin:10px;
+            margin-left:10%;
+            /* border:1px solid red; */
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        input{
+            display: block;
+            box-sizing: border-box;
+            border:1px solid rgb(235, 228, 228);
+            box-shadow: 3px 3px rgb(207, 204, 204);
+            width:80%;
+            margin: 0px 10%;
+            height: 40px;
+            border-radius: 30px;
+            padding: 10px;
+        }
+
+
+        .button button{
+            height: 50px;
+            width:150px;
+            margin:20px 120px;
+            border: 1px solid grey;
+            box-sizing: border-box;
+            border-radius: 20px;
+            background-color: coral;
+            font-size: medium;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <form action="/register" method="post">
+            
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" name="email" id="mail" required>
+            </div>
+
+            <div>
+                <label for="naam">Username</label>
+                <input type="text" name="username" id="naam" required>
+            </div>
+
+            <div>
+                <label for="pass">Password</label>
+                <input type="text" name="password" id="pass" required>
+            </div>
+            <div class="button">
+                <button type="submit">SignUp</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
