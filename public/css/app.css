@@ -306,7 +306,7 @@ img {
 .reasons-v{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .reasons-img-v{
     width: fit-content;
@@ -314,7 +314,34 @@ img {
 }
 
 .reasons-children-v{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* -------------------------------------------- */
+
+/* -------------service-places/footer-------------------- */
+.service-places-parent-v{
+    margin-top: 20px;
+    background-color: #252f38;
+}
+.service-places-child-v{
+    margin-top: 5px;
+    width: 90%;
+    margin: auto;
+}
+
+.service-places-child-v h4{
+    color: rgb(215, 212, 212);
+    font-weight: 700;
+    
+}
+
+.footer-ul-li-a{
+    color: rgb(215, 212, 212);
+    font-weight: 600;
+}
+.footer-ul-li-a:hover{
+    color: rgb(215, 212, 212, 0.8);
+}
+
+/* -------------service-places/footer-------------------- */
