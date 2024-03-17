@@ -296,3 +296,25 @@ img {
     border-bottom-right-radius: 30px;
     color: white;
 }
+
+/* ----Why choose DriveDynasty---- */
+.why-dynasty-v{
+    width: fit-content;
+    margin: auto;
+}
+
+.reasons-v{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+.reasons-img-v{
+    width: fit-content;
+    margin: auto;
+}
+
+.reasons-children-v{
+    border: 1px solid black;
+}
+
+/* -------------------------------------------- */
