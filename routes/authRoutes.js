@@ -3,15 +3,6 @@ const User = require("../models/User");
 const passport = require("passport");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-    res.render("cars/initial");
-});
-
-router.get("/home", (req, res) => {
-    const { city } = req.query;
-    res.render("cars/index", { city });
-})
-
 router.get("/register", (req, res) => {
     res.render("auth/signup");
 });

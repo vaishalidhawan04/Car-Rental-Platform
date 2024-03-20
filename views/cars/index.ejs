@@ -32,70 +32,21 @@
         <h1 class="popular-cars-h1-v">Popular Cars</h1>
     </div>
 
-    <div class="car-cards-parent-v">
-        <div class="car-cards-child-v">
-            <div class="car-cards">
-                <img src="images/car1-257.jpg" alt="car-image">
-                <div class="car-card-v">
-                    <div class="card-car-name-v">
-                        <h5>Porsche Panamera</h5>
-                        Petrol | 5 seater
-                    </div>
-                    <hr>
-                    <div>
-                        <h6>
-                            &#8377; 500/hr
-                        </h6>
+    <div class="row">
+        <% for(let item of cars){ %>
+            <div class="col-lg-4 product-card">
+                <div class="card text-center shadow mt-3 mx-auto" style="width: 18rem;">
+                    <img class="img" src="<%=item.img%>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title"><%= item.name %></h2>
+                        <h4 class="card-text"><%= item.desc %></h4>
+                        <h3 class="card-title">₹<%= item.price %>/hr</h3>
+                        <a href="/cars/<%=item._id%>" class="btn btnn btn-primary">View Car</a>
                     </div>
                 </div>
             </div>
-            <div class="car-cards">
-                <img src="images/car2.jpg" alt="car-image">
-                <div class="car-card-v">
-                    <div class="card-car-name-v">
-                        <h5>Citroen C3</h5>
-                        Petrol | 5 seater
-                    </div>
-                    <hr>
-                    <div>
-                        <h6>
-                            &#8377; 500/hr
-                        </h6>
-                    </div>
-                </div>
-            </div>
-            <div class="car-cards">
-                <img src="images/car3.jpg" alt="car-image">
-                <div class="car-card-1-v">
-                    <div class="card-car-name-v">
-                        <h5>Tata Tigor</h5>
-                        Petrol | 5 seater
-                    </div>
-                    <hr>
-                    <div>
-                        <h6>
-                            &#8377; 500/hr
-                        </h6>
-                    </div>
-                </div>
-            </div>
-            <div class="car-cards">
-                <img src="images/car4.jpg" alt="car-image">
-                <div class="car-card-1-v">
-                    <div class="card-car-name-v">
-                        <h5>BMW i7 M</h5>
-                        Petrol | 5 seater
-                    </div>
-                    <hr>
-                    <div>
-                        <h6>
-                            &#8377; 500/hr
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
+        <% } %>
+    </div>
 
 <!-- Why choose Drive Dynasty -->
 <div class="mt-5">
