@@ -2,13 +2,24 @@
 
 
     <div class="row">
-        <div class="col-lg-6 car-card mt-5">
+        <!-- <div class="col-lg-6 car-card mt-5">
             <div class="card shadow mt-3 mx-auto" style="width: 22rem;">
                 <img class="img" src="<%=foundCar.img%>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h3 class="card-title text-center"><%= foundCar.name %></h3>
                     <h5 class="card-title">₹<%= foundCar.price %>/hr</h5>
                     <p class="card-text"><%= foundCar.desc %></p>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="col-lg-4 product-card product-card-show m-5">
+            <div class="card card-show text-center shadow m-3 mx-auto" style="width: 25rem; height: 25em;">
+                <img class="img img-show" src="<%=foundCar.img%>" class="card-img-top" alt="...">
+                <div class="card-body card-body-show">
+                    <h4 class="card-title"><%= foundCar.name %></h4>
+                    <h5 class="card-text"><%= foundCar.desc %></h5>
+                    <h6 class="card-title">₹<%= foundCar.price %>/hr</h6> 
                 </div>
             </div>
         </div>

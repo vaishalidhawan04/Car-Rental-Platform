@@ -19,13 +19,20 @@ router.get("/home", async (req, res) => {
 
 router.get('/cars/:id' , async(req,res)=>{
     try{
+        
         let {id} = req.params;
         let foundCar = await Car.findById(id).populate('reviews');
+        
         res.render('cars/show' , {foundCar});
+        
     }
     catch(e){
         res.status(500).render('error' , {err:e.message});
     }
+})
+
+router.get('/relations', (req, res)=>{
+    res.render('investorRelations');
 })
 
 module.exports = router;

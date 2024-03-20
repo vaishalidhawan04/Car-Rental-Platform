@@ -291,7 +291,7 @@ img {
 }
 
 .address:nth-child(4) {
-    background: #10a310;
+    background: #252f38;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     color: white;
@@ -345,3 +345,28 @@ img {
 }
 
 /* -------------service-places/footer-------------------- */
+
+/* ----------------Product card------------------- */
+.product-card-index{
+    /* border: 1px solid black; */
+}
+.card-index{
+    /* border: 1px solid black; */
+}
+.card-body-index h4{
+    font-weight: bold;
+}
+.img-index{
+    border: 1px solid transparent;
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: 10em;
+}
+/* ----------------Product card------------------- */
+
+/* -------------Product card in show-------------- */
+.img-show{
+    border: 1px solid transparent;
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: 15em;
+}
+/* -------------Product card in show-------------- */

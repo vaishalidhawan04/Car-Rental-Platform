@@ -13,9 +13,9 @@
                 <% if(city) { %>
                     <h2 id="main-sub-heading-v">Book your drive in <%= city %>
                     </h2>
-                    <% } else { %>
-                        <h2 id="main-sub-heading-v">Book your drive!</h2>
-                        <% } %>
+                <% } else { %>
+                    <h2 id="main-sub-heading-v">Book your drive!</h2>
+                <% } %>
             </div>
         </div>
 
@@ -34,13 +34,15 @@
 
     <div class="row">
         <% for(let item of cars){ %>
-            <div class="col-lg-4 product-card">
-                <div class="card text-center shadow mt-3 mx-auto" style="width: 18rem;">
-                    <img class="img" src="<%=item.img%>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-title"><%= item.name %></h2>
-                        <h4 class="card-text"><%= item.desc %></h4>
-                        <h3 class="card-title">₹<%= item.price %>/hr</h3>
+            <div class="col-lg-4 product-card product-card-index">
+                <div class="card card-index text-center shadow m-3 mx-auto" style="width: 18rem; height: 25em;">
+                    <img class="img img-index" src="<%=item.img%>" class="card-img-top" alt="...">
+                    <div class="card-body card-body-index">
+                        <h4 class="card-title"><%= item.name %></h4>
+                        <h5 class="card-text"><%= item.desc %></h5>
+                        <h6 class="card-title">₹<%= item.price %>/hr</h6>   
+                    </div>
+                    <div class="mb-5">
                         <a href="/cars/<%=item._id%>" class="btn btnn btn-primary">View Car</a>
                     </div>
                 </div>
