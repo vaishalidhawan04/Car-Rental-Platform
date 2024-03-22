@@ -35,4 +35,8 @@ router.get('/relations', (req, res)=>{
     res.render('investorRelations');
 })
 
+router.get('/leadership', (req, res)=>{
+    res.render('leadership');
+})
+
 module.exports = router;

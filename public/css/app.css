@@ -248,9 +248,9 @@ svg {
     box-shadow: 0px 10px 15px -3px rgb(185, 180, 180);
 }
 
-img {
+/* img {
     border-radius: 1rem 1rem 0px 0px;
-}
+} */
 
 .card-car-name-v {
     margin-top: 40px;
@@ -417,3 +417,27 @@ img {
 .btn:hover {
     background-color: black;
 }
+
+/* -------------leadership-------------- */ 
+.leadership-img-div{
+    width: fit-content;
+    margin: 20px auto;
+}
+.leadership-img{
+    height: 125px;
+    width: 125px;
+    border: 3px solid #252f38;
+    border-radius: 50%;
+    
+}
+
+.leadership-desc-v{
+    width: 85%;
+    margin: 20px auto;
+
+}
+
+.leadership-desc-v h6{
+    font-size: large;
+}
+/* -------------leadership-------------- */
