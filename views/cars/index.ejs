@@ -34,16 +34,14 @@
 
     <div class="row">
         <% for(let item of cars){ %>
-            <div class="col-lg-4 product-card product-card-index">
-                <div class="card card-index text-center shadow m-3 mx-auto" style="width: 18rem; height: 25em;">
-                    <img class="img img-index" src="<%=item.img%>" class="card-img-top" alt="...">
-                    <div class="card-body card-body-index">
-                        <h4 class="card-title"><%= item.name %></h4>
-                        <h5 class="card-text"><%= item.desc %></h5>
-                        <h6 class="card-title">₹<%= item.price %>/hr</h6>   
-                    </div>
-                    <div class="mb-5">
-                        <a href="/cars/<%=item._id%>" class="btn btnn btn-primary">View Car</a>
+            <div class="product-card">
+                <div class="card">
+                    <img class="card-img-top" src="<%=item.img%>" alt="Car Image">
+                    <div class="cardBody">
+                        <h5 class="card-title"><%= item.name %></h5>
+                        <p class="card-text" style="text-align: center;"><%= item.desc %></p>
+                        <p class="card-price">₹<%= item.price %>/hr</p>  
+                        <div class="btn-div"><a href="/cars/<%=item._id%>" class="btn btn-primary">View Car</a></div>
                     </div>
                 </div>
             </div>

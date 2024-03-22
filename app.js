@@ -47,7 +47,9 @@ app.use(express.static("public"));
 app.use(authRoutes);
 app.use(carRoutes);
 app.use(reviewRoutes);
-//seedDB();
+// seedDB();
+
+
 app.listen(8080, ()=>{
     console.log("Server connected to port 8080");
 })
