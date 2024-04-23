@@ -1,17 +1,3 @@
-svg {
-    /* border: 1px solid black; */
-    /* width: 80px; */
-    /* margin-left: 15px; */
-}
-
-.col-1 {
-    /* border: 1px solid black; */
-}
-
-.col-3 {
-    /* border: 1px solid black; */
-}
-
 .container-fluid {
     background-color: #252f38;
 }
@@ -42,7 +28,6 @@ svg {
     color: white;
     width: fit-content;
     margin: auto;
-    /* border: 1px solid black; */
     align-items: center;
 }
 
@@ -57,23 +42,14 @@ svg {
     color: white;
 }
 
-.dropdown-parent-v {
-    /* border: 1px solid red; */
-    /* display: flex; */
-}
-
 .dropdown {
     display: flex;
     align-items: center;
-    /* height: fit-content; */
-    /* align-items: center; */
     height: 100%;
-    /* border: 1px solid black; */
 }
 
 .dropdown-child-v {
     height: fit-content;
-    /* border: 1px solid black; */
 }
 
 .dropdown-a-v:hover {
@@ -81,6 +57,7 @@ svg {
 }
 
 /* -----------------Sidepanel css-------------------------*/
+
 .sidepanel {
     height: 250px;
     /* Specify a height */
@@ -103,6 +80,7 @@ svg {
 }
 
 /* The sidepanel links */
+
 .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -113,11 +91,13 @@ svg {
 }
 
 /* When you mouse over the navigation links, change their color */
+
 .sidepanel a:hover {
     color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
+
 .sidepanel .closebtn {
     position: absolute;
     top: 0;
@@ -127,6 +107,7 @@ svg {
 }
 
 /* Style the button that is used to open the sidepanel */
+
 .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -147,9 +128,6 @@ svg {
     height: 400px;
     width: 100%;
     border: 1px solid black;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .main-page-img-v::before {
@@ -171,15 +149,10 @@ svg {
     font-weight: 600;
     color: #fff;
     letter-spacing: normal;
-    /* color: #ffffff;   */
-    /* font-size: 14rem;
-  line-height: 0.9;
-  text-align: center; */
 }
 
 #main-sub-heading-v {
     position: relative;
-    /* font-size: 60px; */
     font-weight: 600;
     color: #fff;
     letter-spacing: normal;
@@ -191,85 +164,26 @@ svg {
 }
 
 .div-rent-v {
-    /* margin-left: 350px; */
     margin-top: 50px;
-    /* width: fit-content; */
-
 }
 
 .popular-cars-h1-v {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .popular-cars-div-v {
     margin: 20px;
     margin-left: 80px;
-}
-
-/* .main-page-img-v{
-    
-    height: 400px;
-    width: 100%;
-    background-image: url("../images/web_banner_compressed.jpg");
-    background-repeat: no-repeat;
-    border: 1px solid black;
-    opacity: 0.9;
-}
-
-
-
-.div-rent-v{
-    margin-left: 350px;
-    margin-top: 50px;
-}
-
-.h1-rent-v{
-    
-    font-size: 60px;
-    font-weight: 600;
-} */
-
-/* -----------------car-cards---------------------------------*/
-
-
-.car-cards-child-v {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: auto;
-    height: 350px;
-    justify-content: space-around;
-}
-
-.car-cards {
-    width: 260px;
-    height: 350px;
-    border-radius: 1rem;
-    box-shadow: 0px 10px 15px -3px rgb(185, 180, 180);
-}
-
-/* img {
-    border-radius: 1rem 1rem 0px 0px;
-} */
-
-.card-car-name-v {
     margin-top: 40px;
 }
 
-.car-card-v {
-    margin: 0px 5px;
-}
+/* -----------------Search location---------------------------------*/
 
-
-/* -----------------car-cards---------------------------------*/
-
-
-
-.getCar{
+.getCar {
     position: relative;
     margin: auto;
     margin-top: 80px;
-    width: 60%;
+    width: 57%;
     height: 60px;
     display: grid;
     grid-template-columns: 35% 0.2% 35% 29.8%;
@@ -279,10 +193,12 @@ svg {
 }
 
 .address {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left: 60px;
+    font-size: 17px;
+    letter-spacing: 1px;
 }
 
 .midLine {
@@ -295,66 +211,76 @@ svg {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     color: white;
+    transition: background-color 0.3s ease;
 }
+
+.address:nth-child(4):hover{
+    background-color: black;
+}
+
+.places{
+    font-size: 16px;
+}
+
+/* -----------------Search location---------------------------------*/
 
 /* ----Why choose DriveDynasty---- */
-.why-dynasty-v{
+
+.why-dynasty-v {
     width: fit-content;
     margin: auto;
 }
 
-.reasons-v{
+.reasons-v {
     display: flex;
     justify-content: center;
-    /* border: 1px solid black; */
-}
-.reasons-img-v{
-    width: fit-content;
-    margin: auto;
 }
 
-.reasons-children-v{
-    /* border: 1px solid black; */
+.reasons-img-v {
+    width: fit-content;
+    margin: auto;
 }
 
 /* -------------------------------------------- */
 
 /* -------------service-places/footer-------------------- */
-.service-places-parent-v{
+
+.service-places-parent-v {
     margin-top: 20px;
     background-color: #252f38;
 }
-.service-places-child-v{
+
+.service-places-child-v {
     margin-top: 5px;
     width: 90%;
     margin: auto;
 }
 
-.service-places-child-v h4{
+.service-places-child-v h4 {
     color: rgb(215, 212, 212);
     font-weight: 700;
-    
 }
 
-.footer-ul-li-a{
+.footer-ul-li-a {
     color: rgb(215, 212, 212);
     font-weight: 600;
 }
-.footer-ul-li-a:hover{
+
+.footer-ul-li-a:hover {
     color: rgb(215, 212, 212, 0.8);
 }
 
 /* -------------service-places/footer-------------------- */
 
 /* ----------------Product card------------------- */
+
 .product-card {
     width: 100%;
-    max-width: 27rem; 
+    max-width: 27rem;
     margin: 1.5rem auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .card {
@@ -401,7 +327,7 @@ svg {
     text-align: center;
 }
 
-.btn {
+.botn {
     background-color: #31383e;
     border: none;
     padding: 0.5rem 1rem;
@@ -410,34 +336,40 @@ svg {
     transition: background-color 0.3s ease;
 }
 
-.btn-div {
+.botn-div {
     text-align: center;
 }
 
-.btn:hover {
+.botn:hover {
     background-color: black;
 }
 
-/* -------------leadership-------------- */ 
-.leadership-img-div{
+/* -------------leadership-------------- */
+
+.leadership-img-div {
     width: fit-content;
     margin: 20px auto;
 }
-.leadership-img{
+
+.leadership-img {
     height: 125px;
     width: 125px;
     border: 3px solid #252f38;
     border-radius: 50%;
-    
 }
 
-.leadership-desc-v{
+.leadership-desc-v {
     width: 85%;
     margin: 20px auto;
-
 }
 
-.leadership-desc-v h6{
+.leadership-desc-v h6 {
     font-size: large;
 }
+
+.sex, .sex:focus, .sex:active{
+    outline: none !important;
+    border: none !important;
+}
+
 /* -------------leadership-------------- */

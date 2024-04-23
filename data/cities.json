@@ -1,0 +1,31 @@
+{
+    "agra" : ["Taj Mahal", "Dayal Bagh", "Taj Gallery", "Rajeshwar Mandir", "Balkeshwar Mandir", "Rawli Maharaj Temple", "St. George's Cathedral", "Gurudwara Guru ka Tal"],
+    
+    "delhi" : ["Chandni Chowk", "Red Fort", "Indira Gandhi International Airport T2", "Indira Gandhi International-Terminal 3 Arrival", "New Delhi Railway Station Parcel Office", "Delhi Cantt Railway Station", "Delhi railway station", "Indira Gandhi International Airport"],
+    
+    "bangalore" : ["Majestic Bus Stand", "Yeshwanthpur", "Bengaluru Palace", "BTM Layout", "Bellandur", "Marathahalli", "Bangalore University", "Indira Nagar"],
+    
+    "mumbai" : ["Andheri East", "Kalyan", "Thane Railway Station", "Mumbai Domestic Airport Lounge - Adani Lounge", "Mumbai Central Railway Station Building", "BATS", "Thane", "Chhatrapati Shivaji Maharaj International Airport"],
+    
+    "lucknow" : ["Charbagh Railway Station Lucknow-Gate No. 5", "Lucknow Zoo", "Gomti Nagar", "Lucknow University - Gate No. 2", "Lucknow N.R. Railway Stadium", "Heritage Walk In Lucknow", "Chaudhary Charan Singh International Airport", "Marine Drive Lucknow"],
+    
+    "pune" : ["Lonavala railway station", "Hinjewadi, Mulshi", "Katraj",  "Baner", "Hadapsar", "Kothrud", "Wakad, Chinchwad", "Lonavala"],
+    
+    "ranchi" : ["Lake Rd, Upper Bazar", "Raj Hospital Complex, Mahatma Gandhi Main Rd", "Main Road, Diversion Rd, Kadru", "98RX+886, Bariatu Rd, Indraprasth Colony, medical chowk", "Ranchi University, Morabadi", "Ratu Rd, &, Indrapuri Rd", "342, near post office, Shahdeo Nagar, Panchsheel Colony", "C959+PVF, Bargain Rd, Dihwar Muhalla, Bargain Village"],
+    
+    "gurugram" : ["Natinal Park, Gurgaon Farukh Nagar Rd, Sultanpur", "Khera khurampur, Farukh Nagar", "484/532, 485/583, Farrukh Nagar", "Gurgaon-Badli Road Chandu, Budhera", "Khalikpur", "Sector 90", "BHOTWAS, Bohatwas Bhondu", "Berli Kalan Road, Baldhan Khurd"],
+    
+    "kolkata" : ["Sealdah Railway Station", "Howrah Bridge", "Netaji Subhash Chandra Bose International Airport-Terminal 1", "Howrah Railway Station", "Kolkata Railway Station", "Dakshineswar Kali Temple", "Victoria Memorial", "Botanical Garden"],
+    
+    "bhopal" : ["MP Nagar", "Lalghati", "Bhopal Railway Station-East Gate", "Habibganj Railway Station", "Raja Bhoj Airport", "Manisha Market Rd, Ekant Park, Shahpura", "Char Imli, Bhopal", "Shop No. E, 1, 1100 Quarters, Arera Colony"],
+    
+    "indore" : ["Bhawarkua", "Vijay Nagar", "Indore Junction Railway Station", "Indore Zoo Park", "Indore Marriott Hotel", "UG 1, Vijay Chambers, 15/3, Ware House Rd, Siyaganj", "411-A, Mahatma Gandhi Rd, near City Center, Sanghi Colony", "Green Park Colony Rd, Green Park, Dhar Kothi Colony"],
+    
+    "chandigarh" : ["Kharar Bus Stand", "Zirakpur", "Mohali", "Chandigarh University", "Chandigarh Railway Station", "Shaheed Bhagat Singh International Airport", "Government Museum and Art Gallery", "ISKCON Chandigarh"],
+    
+    "surat" : ["Ramnagar Society, Banroli Road, Pandesara", "Raghuvir Saffron, Bhimrad", "Sai Ram Industrial society, Bamroli, Udhana", "Terenaam Rd, opp. Vinit Mobile, Geeta Nagar, Pandesara", "4RHX+4P3, Bhestan", "Sangam Circle, Vaibhav Laxmi Shopping Centre, Bhestan", "Saniya Kande - Mohni Rd, near Indian Oil, Dindoli", "Mohni"],
+    
+    "hyderabad" : ["Hyderabad Central, Punjagutta", "Secunderabad railway station platform 10", "Kondapur", "Miyapur", "Gachibowli", "Rajiv Gandhi International Airport", "Hyderabad Deccan Railway Station | Nampally" , "Ramoji Film City"],
+    
+    "jaipur" : ["Malviya Nagar", "Vaishali Nagar", "Sindhi Camp Bus Station Jaipur", "Mansarovar", "Jaipur International Airport", "2/4, Panch Batti, Patel Colony, Hathroi", "WR39+P2H, Gangawal Park, Adarsh Nagar", "6, Shiv Marg, Kirti Nagar, Saket Nagar, Shyam Nagar"]
+}

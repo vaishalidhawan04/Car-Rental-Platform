@@ -20,10 +20,18 @@
         </div>
 
         <section class="getCar">
-            <div class="address">GLA University Mathura, UP......</div>
+            <div class="dropdown ms-5">
+                <a class="btn places btn-light dropdown-toggle bg-white" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" id="abc">Select Location in <%= city %></a>
+                <ul class="dropdown-menu">
+                    <% for(let city of locations)  {  %>
+                        <li><a class="dropdown-item" href="/particular?loc=<%= city %>" id="a"><%= city %></a></li>
+                     <%  } %>   
+                </ul>
+            </div>
             <div class="midLine"></div>
-            <div class="address">9 Mar '24, 6:00 PM - 12 Mar '24, 2:00 AM</div>
-            <div class="address">GET CAR</div>
+            <input type="text" class="address" name="daterange"/>
+            <button class="address">GET CAR</button>
         </section>
 
     </div>
@@ -41,7 +49,7 @@
                         <h5 class="card-title"><%= item.name %></h5>
                         <p class="card-text" style="text-align: center;"><%= item.desc %></p>
                         <p class="card-price">₹<%= item.price %>/hr</p>  
-                        <div class="btn-div"><a href="/cars/<%=item._id%>" class="btn btn-primary">View Car</a></div>
+                        <div class="botn-div"><a href="/cars/<%=item._id%>" class="btn botn btn-primary">View Car</a></div>
                     </div>
                 </div>
             </div>
