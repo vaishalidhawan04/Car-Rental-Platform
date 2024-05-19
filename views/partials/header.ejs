@@ -20,8 +20,11 @@
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="/relations">Investor Relations</a>
                     <a href="/leadership">Leadership</a>
-                    <a href="/login">Login</a>
-                    <a href="/register">SignUp</a>
+                    <% if(!isLogin) { %>
+                        <a href="/login">Login</a>
+                        <a href="/register">SignUp</a>
+                     <% } %>   
+                   
                 </div>
                   
                 <button class="openbtn" onclick="openNav()">&#9776;</button>
@@ -61,11 +64,19 @@
             </div>
             <div class="col-3 auth-parent-v">
                 <div class="auth-v">
-                    <a class="login-v auth-a-v" href="/login">
-                        Login
-                    </a>
-                    /
-                    <a class="signup-v auth-a-v" href="/register">SignUp</a>
+                    <% if(!isLogin) { %>
+                        <a class="login-v auth-a-v" href="/login">
+                            Login
+                        </a>
+                        /
+                        <a class="signup-v auth-a-v" href="/register">SignUp</a>
+                     <% } %>   
+
+                     <% if(isLogin) { %>
+                        <a class="login-v auth-a-v" href="/logout">
+                            Logout
+                        </a>
+                     <% } %>
                 </div>
             </div>
         </div>

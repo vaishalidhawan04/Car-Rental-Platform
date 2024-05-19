@@ -50,6 +50,15 @@ app.use(reviewRoutes);
 // seedDB();
 
 
+require("dotenv").config();
+var http = require('http').Server(app);
+
+const paymentRoute = require('./routes/paymentRoute');
+
+app.use('/',paymentRoute);
+
+
+
 app.listen(8080, ()=>{
     console.log("Server connected to port 8080");
 })

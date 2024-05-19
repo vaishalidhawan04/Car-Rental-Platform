@@ -3,7 +3,6 @@
 
     <div class="main-page-img-v">
         <div>
-
         </div>
         <div class="div-rent-v">
             <div class="div-rent-child-v">
@@ -22,21 +21,37 @@
         <section class="getCar">
             <div class="dropdown ms-5">
                 <a class="btn places btn-light dropdown-toggle bg-white" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" id="abc">Select Location in <%= city %></a>
+                    aria-expanded="false" id="selectedLocationBtn">Select Location in <%= city %></a>
                 <ul class="dropdown-menu">
                     <% for(let city of locations)  {  %>
-                        <li><a class="dropdown-item" href="/particular?loc=<%= city %>" id="a"><%= city %></a></li>
+                        <li><a class="dropdown-item" href="#" onclick="selectLocation('<%= city %>')"><%= city %></a></li>
                      <%  } %>   
                 </ul>
             </div>
             <div class="midLine"></div>
             <input type="text" class="address" name="daterange"/>
-            <button class="address">GET CAR</button>
+            <button class="address" onclick="scrollCars()">GET CAR</button>
         </section>
+
+        <script>
+
+            function selectLocation(city) {
+                var selectedLocationBtn = document.getElementById("selectedLocationBtn");
+                selectedLocationBtn.innerText = city;
+            }
+
+            function scrollCars() {
+                var ele = document.getElementById("popular-cars-section");
+                if(ele){
+                    ele.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            }
+        </script>
+        
 
     </div>
 
-    <div class="popular-cars-div-v">
+    <div class="popular-cars-div-v" id="popular-cars-section">
         <h1 class="popular-cars-h1-v">Popular Cars</h1>
     </div>
 

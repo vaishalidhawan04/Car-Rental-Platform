@@ -14,12 +14,13 @@ router.get("/", (req, res) => {
 router.get("/home", async (req, res) => {
     const { city } = req.query;
     try {
+    
         let cars = await Car.find({});
         let a = city;
         a = a.toLowerCase();
         fs.readFile(p, (err,data)=>{
             const cities = JSON.parse(data);
-            res.status(200).render('cars/index', { cars, city , locations : cities[a]});
+            res.status(200).render('cars/index', { cars, city , locations : cities[a], isLogin : req.user !== undefined});
         })
     }
     catch (e) {
@@ -31,7 +32,7 @@ router.get('/cars/:id' , async(req,res)=>{
     try{
         let {id} = req.params;
         let foundCar = await Car.findById(id).populate('reviews');
-        res.render('cars/show' , {foundCar});
+        res.render('cars/show' , {foundCar, isLogin : req.user !== undefined});
     }
     catch(e){
         res.status(500).render('error' , {err:e.message});
@@ -44,7 +45,7 @@ router.get('/particular', async (req,res)=>{
         loc = loc.toLowerCase();
         fs.readFile(p, (err,data)=>{
             const cities = JSON.parse(data);
-            res.status(200).render('car/index',{ locations : cities[loc] });
+            res.status(200).render('car/index', { locations : cities[loc], isLogin : req.user !== undefined });
         })
     }
     catch(err){
@@ -52,12 +53,16 @@ router.get('/particular', async (req,res)=>{
     }
 })
 
+router.get('/rent', (req, res)=>{
+    res.render('cars/rent', {isLogin : req.user !== undefined});
+})
+
 router.get('/relations', (req, res)=>{
-    res.render('investorRelations');
+    res.render('investorRelations', {isLogin : req.user !== undefined});
 })
 
 router.get('/leadership', (req, res)=>{
-    res.render('leadership');
+    res.render('leadership', {isLogin : req.user !== undefined});
 })
 
 module.exports = router;

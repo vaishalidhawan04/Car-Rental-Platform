@@ -1,3 +1,4 @@
+ 
 .container-fluid {
     background-color: #252f38;
 }
@@ -23,7 +24,7 @@
 }
 
 .auth-v {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 400;
     color: white;
     width: fit-content;
@@ -32,7 +33,7 @@
 }
 
 .auth-a-v {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 600;
     text-decoration: none;
     color: white;
@@ -330,6 +331,7 @@
 .botn {
     background-color: #31383e;
     border: none;
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
@@ -343,6 +345,7 @@
 .botn:hover {
     background-color: black;
 }
+
 
 /* -------------leadership-------------- */
 
@@ -367,9 +370,41 @@
     font-size: large;
 }
 
-.sex, .sex:focus, .sex:active{
+.particular, .particular:focus, .particular:active{
     outline: none !important;
     border: none !important;
 }
 
 /* -------------leadership-------------- */
+
+
+
+/* --------------Rent Car----------------- */
+.rent-body{
+    background-color: rgb(37, 47, 56, 0.3);
+    height: 100vh;
+}
+.rent-body h2{
+    position: relative;
+    top: 20px;
+}
+.rent-form{
+    color: white;
+    background-color: rgb(37, 47, 56);
+    border-radius: 0.5rem;
+    height: 600px;
+    padding: 25px;
+    position: relative;
+    top: 20px;
+}
+.satisfy-regular-rent {
+    font-family: "Satisfy", cursive;
+    font-weight: 800;
+    font-size: xx-large;
+    font-style: normal;
+}
+/* --------------------------------------- */
+
+::-webkit-scrollbar{
+    display: none;
+}

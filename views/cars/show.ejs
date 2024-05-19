@@ -3,12 +3,13 @@
 
     <div class="row">
         <div class="col-lg-4 product-card product-card-show m-5">
-            <div class="card card-show text-center shadow m-3 mx-auto" style="width: 25rem; height: 25em;">
+            <div class="card card-show text-center shadow m-3 mx-auto" style="width: 25rem; height: 28em;">
                 <img class="img img-show" src="<%=foundCar.img%>" class="card-img-top" alt="...">
                 <div class="card-body card-body-show">
                     <h4 class="card-title"><%= foundCar.name %></h4>
                     <h5 class="card-text"><%= foundCar.desc %></h5>
                     <h6 class="card-title">₹<%= foundCar.price %>/hr</h6> 
+                    <div class="botn-div"><a href="/rent" class="btn botn btn-primary" style="margin-top: 20px;">Rent Car</a></div>
                 </div>
             </div>
         </div>
