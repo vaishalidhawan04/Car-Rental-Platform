@@ -64,5 +64,8 @@ router.get('/relations', (req, res)=>{
 router.get('/leadership', (req, res)=>{
     res.render('leadership', {isLogin : req.user !== undefined});
 })
+router.get('/rent', (req, res)=>{
+    res.render('cars/rent');
+})
 
 module.exports = router;

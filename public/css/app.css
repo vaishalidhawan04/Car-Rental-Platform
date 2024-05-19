@@ -384,10 +384,12 @@
     background-color: rgb(37, 47, 56, 0.3);
     height: 100vh;
 }
+
 .rent-body h2{
     position: relative;
     top: 20px;
 }
+
 .rent-form{
     color: white;
     background-color: rgb(37, 47, 56);
@@ -396,7 +398,9 @@
     padding: 25px;
     position: relative;
     top: 20px;
+    height: 550px;
 }
+
 .satisfy-regular-rent {
     font-family: "Satisfy", cursive;
     font-weight: 800;
